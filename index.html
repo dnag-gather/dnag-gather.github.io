@@ -18,9 +18,15 @@
   opacity: 1.0;
   transition: 0.3s;
   }
-.img:hover{
+.img:hover + .hide{
    opacity: 0.3;
+  display:block;
+  color:black;
 }
+  .hide {
+  display: none;
+}
+   
 </style>
 </head>
 <body>
@@ -31,6 +37,7 @@
   
   <div class="img"><a href="https://colonist.io/">
   <img src="Images/Catan.png" alt="Catan"></a>
+    <div class="hide">Catan</div>
   </div>
   
   <div class="img"><a href="https://codenames.game">
