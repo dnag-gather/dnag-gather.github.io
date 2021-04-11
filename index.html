@@ -18,9 +18,38 @@
   opacity: 1.0;
   transition: 0.3s;
   }
-  
-.img:hover{
-   opacity: 0.3;
+
+}
+.img_des_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img:hover .img_des_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_des {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img:hover .img_des {
+  transform: translateY(0);
 }
   
 </style>
@@ -33,7 +62,11 @@
   
   <div class="img"><a href="https://colonist.io/">
   <img src="Images/Catan.png" alt="Catan">
-    </a></div>
+    </a>
+  <div class="img_des_layer">
+    <p class="img_des">This image looks super neat.</p>
+  </div>
+  </div>
   
   <div class="img"><a href="https://codenames.game">
   <img src="Images/CodeNames.png" alt="CodeNames">
