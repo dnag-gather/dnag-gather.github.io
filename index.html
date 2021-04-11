@@ -30,17 +30,27 @@ img {
     <p>Skribbl</p>
   </a>
   
-  <form action="/action_page.php">
-    <label for="fname">Paste link here:</label>
-    <input type="url" id="fname" name="fname"  placeholder="https://example.com"><br><br>
-  </form>
-  
-  <label for="url">Enter an https:// URL:</label>
+<form name="jumpurl1" onSubmit="return jumpit()">
+<input type="text" size=30 name="jumpurl2" value="http://">
+<input type="button" value="Go!" onClick="jumpit()">
+</form>
+<script>
 
-<input type="url" name="url" id="url"
-       placeholder="http://colonist.io"
-       pattern="https://.*" size="30"
-       required>
+/*
+URL jump box
+By JavaScript Kit (http://javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+function jumpit(){
+window.location=document.jumpurl1.jumpurl2.value
+return false
+}
+</script>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
 </div>
 
 </body>
