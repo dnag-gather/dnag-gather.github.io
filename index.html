@@ -23,6 +23,16 @@
    opacity: 0.3;
    cursor: crosshair;
 }
+#img .text {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+
+#img:hover .text {
+visibility:visible;
+}
   
 </style>
 </head>
@@ -38,7 +48,8 @@
   </div>
   
   <div class="img"><a href="https://codenames.game">
-  <img src="Images/CodeNames.png" alt="CodeNames">
+  <img src="Images/CodeNames.png" alt="CodeNames" class="hover">
+    <p class="text">text</p>
     </a></div>
   
   <div class="img"><a href="https://skribbl.io/">
