@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DNAG Board Games</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+<style>
+.content {
+  text-align:center;
+  margin:auto;
+  font-family: 'Roboto', sans-serif;
+} 
+.img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  padding: 5px;
+  margin:0px 20px;
+  border: 1px solid #000000;
+  opacity: 1.0;
+  transition: 0.3s;
+  }
+.img:hover {
+   opacity: 0.3;
+  }
+   
+</style>
+</head>
+<body>
+  
+<div class="content">
+
+  <p><b>Step 1:</b> Have one person in your group create a new game of Catan <a href="https://colonist.io">here</a>.</p> Click on the grey "Create" button next to Multiplayer Game.
+  <p><b>Step 2:</b> Adjust and confirm the following settings:</p>. After confirming settings, scroll down to check "I'm Ready" and click "Start Game".
+  
+  <p><b>Step 3:</b> Copy the game link and paste it into the chat. Make sure to address the message "To Nearby" so that people in the same area can see it.</p>
+   The game's website will open and when they create a new game on this website, a game link will be provided.</p>
+  <p><b>Step 3:</b> Have the game organizer copy the game link and paste it into the chat. Make sure to address the message "To Everyone" so that the mods can post the game links for players and spectators.</p>
+  <p><b>Step 4:</b> If you want to join the game, <b>do not click the link in the chat!</b> Instead, <b>copy the link from the chat and paste it into the box below.</b> If the maximum # of players has been reached, you will automatically join as a spectator.</p>
+
+<form name="jumpurl1" onSubmit="return jumpit()">
+<input type="text" size=30 name="jumpurl2" placeholder="PASTE GAME LINK HERE">
+<input type="button" value="Go!" onClick="jumpit()">
+</form>
+<script>
+
+/*
+URL jump box
+By JavaScript Kit (http://javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+function jumpit(){
+window.location=document.jumpurl1.jumpurl2.value
+return false
+}
+</script>
+   
+  <p><b>IMPORTANT!</b> Do not click the link provided in the chat! If you do, the game will open in a new tab and you'll be unable to see your teammates' video while playing the game.</p>
+</div>
+
+</body>
+</html>
